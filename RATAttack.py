@@ -1,19 +1,18 @@
-import os
-import tkinter
-import webbrowser
-import socket
+import pyautogui
 
-tk = tk.Tk()
-tk.geometry(f'200x200')
-tk.configure(bg='black')
+print('Hello dear developer, it is your RAT')
+logon = input('')
 
-def your_ip():
-  hostname = socket.gethostname()
-  local_ip = socket.gethostbyname(hostname)
-  print(local_ip)
+if logon == 'blade in blood':
+  print('Well, it is you, heh kek')
   
-b1 = Button(tk, text='Click)', command=your_ip)
-
-b1.pack()
-
-tk.mainloop()
+  command = input('')
+  
+  if command == 'screenshot':
+    screen = pyautogui.screenshot('screenshot.png')
+    print(screen)
+    
+  
+  
+else:  
+  print('Bye')
