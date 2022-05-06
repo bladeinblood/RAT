@@ -47,7 +47,8 @@ def scan_port(ip, port):
     else:
         print(f"Порт {port} открыт")
     
-ip = socket.gethostbyname("fsokycomm.info")
+inputip = input()
+ip = socket.gethostbyname(inputip)
 for i in range(100):
     scan_port(ip, i)
 
